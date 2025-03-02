@@ -1,0 +1,75 @@
+section.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+}
+section.navigation nav ul {
+    display: flex;
+    list-style-type: "/";
+}
+section.navigation nav ul li {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+section.navigation nav ul li a {
+    text-decoration: none;
+}
+section.navigation nav ul li:first-child {
+    list-style-type: none;
+}
+main {
+    max-width: 1400px;
+    margin: auto;
+}
+main section.hero {
+    text-align: center;
+}
+main section.content {
+    display: flex;
+    justify-content: space-evenly;
+}
+main section.content article {
+    width: 33%
+}
+main section.content article.projects ul li{
+    list-style-type: none;
+}
+main section.content article.experience h4 {
+    margin-bottom: 0;
+}
+main section.content article.experience p {
+    margin: 0;
+} 
+main section.content article.education ul li {
+    list-style-type: "-";
+    padding-left: 10px;
+}
+
+main section.reviews section:has(article.card) {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+main section.reviews article.card {
+    width: 33%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+footer h4 {
+    text-align: center;
+}
+main.contact-page {
+    max-width: 768px;
+    margin: auto;
+}
+main.contact-page form > div{
+    display: flex;
+    flex-direction: column;
+
+}
+main.contact-page form > input[type='submit'] {
+    margin-top: 20px;
+}
