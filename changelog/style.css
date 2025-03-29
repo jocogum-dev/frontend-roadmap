@@ -24,7 +24,7 @@
         position: absolute;
         background-color: #555;
         z-index: -1;
-        transform: translate(208px, 0px);
+        transform: translate(208px, -7px);
     }
     .details__list {
         list-style-type: none;
