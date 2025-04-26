@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.datepicker {
+    max-width: 300px;
+    margin-inline: auto;
+    margin-top: 5rem;
+    
+    position: relative;
+}
+.datepicker__input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #888;
+    border-radius: 1px;
+}
+.datepicker__input > input {
+    flex: 1;
+    border: none;
+    padding-inline: 0.5rem;
+    padding-block: 0.5rem;
+}
+.datepicker__input > button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+.datepicker__input > button > img {
+    min-height: 20px;
+    border: none;
+}
+.calender {
+    display: none;
+}
+.calender.active {
+    display: block;
+    border: 1px solid #888;
+    min-width: 100%;
+    position: absolute;
+    top: 2.5rem;
+}
+.calendar__header {
+    display: flex;
+}
+.calendar__header h2 {
+    flex: 1;
+    text-align: center;
+}
+.calendar__header > button {
+    border: none;
+    background-color: white;
+}
+.calendar__header > button:hover {
+    background-color: #ccc;
+}
+.calendar__header > button > img {
+    min-height: 20px;
+    border: none;
+}
+.calendar__day_names {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 40px;
+    align-items: center;
+}
+.calendar__day_names > span {
+    text-align: center;
+}
+.calendar__dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.calendar__dates > span {
+    text-align: center;
+    border: 1px solid #ccc;
+    display: flex;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.calendar__dates > span:hover{
+    background-color: #ccc;
+} 
