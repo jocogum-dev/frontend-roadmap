@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-red: red;
+    --color-gray: #222;
+    --color-light-gray: #aaa;
+    --color-pink: pink;
+}
+
+.accessible-form {
+    max-width: 800px;
+    margin-inline: auto;
+    margin-top: 5em;
+    border: 1px solid var(--color-gray);
+    padding: 5em;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1em;
+}
+main {
+    flex: 65%
+}
+div:has(input) {
+    display: flex;
+    flex-direction: column;
+    margin-block: 1em;
+    position: relative;
+}
+div:has(input) img {
+    height: 20px;
+    position: absolute;
+    right: 0.5em;
+    bottom: 0.5em;
+}
+input {
+    padding-block: 0.5em;
+    padding-inline-start: 0.5em;
+    border-radius: 5px;
+    border-color: var(--color-gray);
+}
+input:focus {
+    border-color: var(--color-pink);
+    background-color: var(--color-light-gray);
+    outline: none;
+}
+input[type='submit'] {
+    background-color: var(--color-light-gray);
+    border: none;
+}
+input[type='submit']:hover {
+    background-color: var(--color-gray);
+    color: white;
+}
+.error {
+    display: none;
+    color: var(--color-red);
+}
+.error.show{
+    display: block;
+}
+div:has(.error.show) input {
+    border-color: var(--color-red);
+}
+div:has(.error.show) input::placeholder {
+    color: var(--color-red);
+}
+
+.progress-bar {
+    margin-inline: auto;
+    width: 60%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 2px solid var(--color-pink);
+    border-left-color: var(--color-red);
+    border-top-color: var(--color-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-45deg);
+}
+.progress-bar span {
+    font-size: 3em;
+    transform: rotate(45deg);
+}
+.progress {
+    margin-top: 2em;
+}
+.progress__list {
+    
+    padding: 1em;
+    border-radius: 10px;
+    background-color: var(--color-light-gray);
+}
+.progress__list ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+.progress__list .done {
+    text-decoration: line-through;
+    color: var(--color-gray);
+}

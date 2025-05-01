@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Form UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="accessible-form">
+        <main>
+            <form action="/">
+                <div>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="What should we call you?" aria-label="name" required>
+                    <div class="error">Name is required.</div>
+                </div>
+                <div>
+                    <label for="email">Full Name</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" aria-label="email" required>
+                    <div class="error show">Email is already taken.</div>
+                </div>
+                <div>
+                    <label for="password">Enter Password</label>
+                    <input type="password" id="password" name="password" placeholder="xxxx" aria-label="password" required>
+                    <img src="eye-solid.svg" alt="show">
+                    <div class="error">Enter valid password.</div>
+                </div>
+                <div>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="xxxx" aria-label="confirm password" required>
+                    <img src="eye-solid.svg" alt="show">
+                    <div class="error">Enter valid password.</div>
+                </div>
+                <div>
+                    <input type="submit" value="Update Profile">
+                </div>
+            </form>
+        </main>
+        <aside>
+            <div class="progress-bar">
+                <span>65%</span>
+            </div>
+            <div class="progress">
+                <h3>Profile Completeness</h3>
+                <div class="progress__list">
+                    <ul>
+                        <li class="done">Create Account</li>
+                        <li class="done">Update Roadmap Progress</li>
+                        <li class="done">Setup Public Profile</li>
+                        <li>Complete your first project</li>
+                        <li>Invite your Friends</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </section>
+</body>
+</html>
