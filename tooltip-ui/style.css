@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 800px;
+    margin-inline: auto;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    margin-top: 5em;
+    padding: 5em;
+    display: flex;
+    align-items: flex-end;
+    min-height: 250px;
+}
+.title {
+    flex-basis: 35%;
+    flex-grow: 0;
+    align-self: self-start;
+    position: relative;
+    padding-top: 1em;
+}
+.title::after {
+    content: "⟶";
+    position: absolute;
+    right: -20px;
+    top: 1em;
+}
+.tooltip-component {
+    flex: 1;
+}
+.tooltip-component ul {
+    display: flex;
+    justify-content: flex-end;
+    padding-inline: 0;
+    gap: 2em;
+}
+.tooltip-component ul li::marker {
+    color: #aaa;
+}
+.tooltip-component ul li:nth-child(1) {
+    list-style-type: none;
+}
+.tooltip {
+    margin-inline: 1em;
+    position: relative;
+}
+.tooltip:hover .tooltip__link::before {
+    display: initial;
+}
+.tooltip__link {
+    text-decoration: none;
+    color: #222;
+}
+.tooltip__link::before{
+    display: none;
+    content: ""; /* Or use →, ⇒, ►, etc. */
+    color: #222;
+    position: absolute;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-color: transparent;
+    border-style: solid;
+    border-top-color: #222;
+}
+.tooltip:hover .tooltip__text {
+    display: block;
+}
+.tooltip__text {
+    display: none;
+
+    position: absolute;
+    bottom: calc(1em + 10px); 
+    background-color: #222;
+    padding: 1em;
+    color: white;
+    border-radius: 10px;
+    width: max-content;
+    transform: translateX(-50%);
+}
