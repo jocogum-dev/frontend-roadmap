@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>
+        <h1>Tabs</h1>
+        <section class="tab__links">
+            <button id="button_1" class="active" onclick="showTab(this)">First Tab</button>
+            <button id="button_2" onclick="showTab(this)">Second Tab</button>
+            <button id="button_3" onclick="showTab(this)"> Third Tab</button>
+            <button id="button_4" onclick="showTab(this)">Fourth Tab</button>
+        </section>
+        <section class="tab__details">
+            <p>Clicking each tab should hide the content of the other tab and show the content of clicked tab. By default, enable the first tab.</p>
+            <div class="content active">
+                First Tab content to be displayed here.
+            </div>
+            <div class="content">
+                Second Tab content to be displayed here.
+            </div>
+            <div class="content">
+                Third Tab content to be displayed here.
+            </div>
+            <div class="content">
+                Fourth Tab content to be displayed here.
+            </div>
+            <p>Add some dummy content or just add a simple text showing the tab</p>
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 800px;
+    margin-inline: auto;
+    text-align: center;
+    padding-top: 2em;
+    margin-top: 5em;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.tab__links {
+    display: flex;
+    gap: 1rem;
+    padding-inline: 1rem;
+}
+.tab__links button {
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-block: 1rem;
+    background-color: transparent;
+    color: #ccc;
+}
+.tab__links button.active {
+    border-bottom: 1px solid #ccc;
+    color: #000;
+}
+.tab__details {
+    margin: 1rem;
+}
+.tab__details p {
+    text-align: left;
+}
+.tab__details .content {
+    padding: 2rem;
+    margin-block: 1rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    display: none;
+}
+.tab__details .content.active {
+    display: block;
+}
