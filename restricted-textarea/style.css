@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 800px;
+    margin-inline: auto;
+    margin-top: 2rem;
+}
+.textarea__content {
+    max-width: 100%;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    padding: 1rem;
+}
+.textarea__content textarea {
+    box-sizing: border-box;
+    border: none;
+    resize: none;
+    min-height: 200px;
+    min-width: 100%;
+    background-color: transparent;
+}
+.textarea__content textarea:focus-visible,
+.textarea__content textarea:focus {
+    outline: none;
+}
+.textarea__content textarea:disabled {
+    color: inherit;
+}
+.textarea__content .limit {
+    text-align: right;
+}
+.textarea__content:has(textarea:disabled) {
+    border-color: red;
+    color: red
+}
