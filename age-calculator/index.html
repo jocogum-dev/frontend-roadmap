@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="/node_modules/js-datepicker/dist/datepicker.min.css">
+  </head>
+  <body>
+    <main>
+      <h1>Age Calculator</h1>
+      <section class="age-calculator">
+        <div class="calculator__input">
+          <label for="calendar">Enter your birth date:</label>
+          <input type="text" name="calender" id="calendar">
+          <img src="/public/calendar-solid.svg" alt="icon">
+        </div>
+        <div class="datepicker"></div>
+        <button class="calculator__button">Calculate</button>
+        <div class="answer">You are 21 years 10 months old</div>
+      </section>
+      
+    </main>
+    <script type="module" src="/src/main.js"></script>
+    <script src="/node_modules/js-datepicker/dist/datepicker.min.js"></script>
+    <script src="/node_modules/luxon/build/global/luxon.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  max-width: 800px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-inline: auto;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+main h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.age-calculator {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin-inline: auto;
+  gap: 1rem;
+}
+.calculator__input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+.calculator__input input {
+  padding: 0.5rem;
+  border: 1px solid #111;
+  border-radius: 5px;
+}
+.calculator__input img {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+}
+.calculator__button {
+  background-color: #111;
+  color: #f2f2f2;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.answer {
+  text-align: center;
+}
