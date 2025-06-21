@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+}
+
+main {
+  max-width: 800px;
+  margin-inline: auto;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.progress-bar {
+  border-radius: 5px;
+  border: 1px solid #333;
+  padding: 0.5rem;
+
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.progress {
+  height: 1rem;
+  background-color: #333;
+  border-radius: 5px;
+}
+.progress-percent {
+  flex-shrink: 0;
+  flex-grow: 1;
+  flex-basis: 60px;
+}
+.progress-status {
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 60px;
+}
+
+.card {
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+.card-info {
+  background-color: #aaa;
+  padding: 0.5rem;
+  margin: 0.25rem;
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+}
+.card-actions {
+  background-color: #aaa;
+  padding: 0.5rem;
+  margin: 0.25rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-actions button {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
