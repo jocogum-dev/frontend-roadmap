@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+main {
+    max-width: 800px;
+    margin-inline: auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.dropdown-button {
+    border: 1px solid #ccc;
+    background-color: transparent;
+    padding: 1rem;
+    border-radius: 10px;
+    min-width: 200px;
+    text-align: left;
+    font-size: 1.1rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+.dropdown *::after{
+    width: 15px;
+    height: 15px;
+}
+.dropdown-button::after {
+    content: url("/icons/angle-down-solid.svg");
+    position: absolute;
+    right: 1rem;
+}
+.dropdown-button:has(+ .dropdown-list.active)::after  {
+    content: url("/icons/angle-up-solid.svg");
+}
+.dropdown-list {
+    list-style: none;
+    border: 1px solid #ccc;
+    width: 200px;
+    border-radius: 10px;
+    padding: 0;
+    display: none;
+}
+.dropdown-list.active {
+    display: block;
+}
+.list-item {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+}
+.list-item.selected::after {
+    content: url("/icons/circle-check-solid.svg");
+    position: absolute;
+    right: 1rem;
+}
+.list-item + .list-item {
+    border-top: 1px solid #ccc;
+}
