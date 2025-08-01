@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+main {
+    max-width: 800px;
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+form {
+    display: flex;
+    gap: 0.5rem;
+}
+form * {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid #111;
+}
+
+form #valueToConvert {
+    text-align: right;
+    max-width: 80px;
+}
+form #convert {
+    color: #fff;
+    background-color: #111;
+}
+form #convert:disabled {
+    background-color: #999;
+    color: #000;
+}
+.answer {
+    color: rgb(7, 158, 7);
+}

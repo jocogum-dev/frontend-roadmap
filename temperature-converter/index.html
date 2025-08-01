@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div>
+            <h1>Temperature Converter</h1>
+            <p>Enter the temperature, select units and submit</p>
+        </div>
+        <form>
+            <input id="valueToConvert" type="number" value="0">
+            <select name="fromUnit" id="fromUnit">
+                <option value="">From Unit</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Celsius">Celsius</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+            <select name="toUnit" id="toUnit">
+                <option value="">To Unit</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+                <option value="Celsius">Celsius</option>
+                <option value="Kelvin">Kelvin</option>
+            </select>
+            <button id="convert">Convert</button>
+        </form>
+        <p class="answer">34 Celsius is 93.2 Fahrenheit</p>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
