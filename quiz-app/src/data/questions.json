@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "question": "Which of the following is used to declare a variable in JavaScript?",
+      "options": ["var", "let", "const", "All of the above"],
+      "answer": "All of the above"
+    },
+    {
+      "id": 2,
+      "question": "What is the output of: console.log(typeof NaN);",
+      "options": ["number", "NaN", "undefined", "object"],
+      "answer": "number"
+    },
+    {
+      "id": 3,
+      "question": "Which method is used to convert a JSON string into a JavaScript object?",
+      "options": ["JSON.stringify()", "JSON.parse()", "toObject()", "parseJSON()"],
+      "answer": "JSON.parse()"
+    },
+    {
+      "id": 4,
+      "question": "Which symbol is used for strict equality comparison in JavaScript?",
+      "options": ["=", "==", "===", "!="],
+      "answer": "==="
+    },
+    {
+      "id": 5,
+      "question": "What will be the output of: console.log(0 == '0');",
+      "options": ["true", "false", "undefined", "error"],
+      "answer": "true"
+    }
+  ]
+  

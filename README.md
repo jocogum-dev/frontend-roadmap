@@ -20,3 +20,4 @@
 - [Github Random Repositories](https://roadmap.sh/projects/github-random-repo)
 - [Temperature Converter](https://roadmap.sh/projects/temperature-converter)
 - [Pomodoro Timer](https://roadmap.sh/projects/pomodoro-timer)
+- [Quiz App](https://roadmap.sh/projects/quiz-app)
